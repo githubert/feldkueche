@@ -1,0 +1,13 @@
+{{range .}}
+	<div class="post">
+		<div class="title">{{.Enclosure.ImageSize}}</div>
+		<div class="title">{{.Enclosure.BaseName}}</div>
+		<div class="title">{{.Title}}</div>
+		<div class="pubDate">{{.PubDate}}</div>
+		<div class="description">
+			<!-- <img src="{{.Enclosure.Url}}" /> -->
+			<img src="/image/{{.Enclosure.BaseName}}" />
+		</div>
+		<a class="link" href="{{.Link}}">link</a>
+	</div>
+{{end}}
